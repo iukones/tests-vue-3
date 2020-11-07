@@ -2,18 +2,18 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
-    path: '/episodes',
+    path: '/episodes/:page?',
     alias: '/',
     name: 'Episodes',
     component: () => import(/* webpackChunkName: "episodes" */ '../views/Episodes.vue')
   },
   {
-    path: '/locations',
+    path: '/locations/:page?',
     name: 'Locations',
     component: () => import(/* webpackChunkName: "locations" */ '../views/Locations.vue')
   },
   {
-    path: '/characters',
+    path: '/characters/:page?',
     name: 'Characters',
     component: () => import(/* webpackChunkName: "characters" */ '../views/Characters.vue')
   }
